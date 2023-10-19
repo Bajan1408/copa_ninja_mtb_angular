@@ -1,43 +1,45 @@
 import { Component, OnInit } from '@angular/core';
 
+interface Image {
+  src: string;
+  selected: string;
+}
+
 @Component({
   selector: 'app-carrousel',
   templateUrl: './carrousel.component.html',
   styleUrls: ['./carrousel.component.css']
 })
+
+
 export class CarrouselComponent implements OnInit {
-  display: string = 'flex';
-  transition: string = 'transform 0.5s ease-in-out';
-  transform: string = 'translateX(0)';
-  marginLeft: string = '20rem';
-  justify: string = 'center';
-  containerWidth: string = '36vh';
-  containerHeight: string = '40vh';
-  shadow: string = '2px 2px 4px black';
-  radius: string = '10px';
-  idX: number = 0;
+  time: number = 4000;
+  currentImgIndex: number = 0;
 
-
+  images: Image[] = [
+    { src: "assets/img/1a_etapa2023.jpg", selected: "selected" },
+    { src: "assets/img/foto_atleta.jpg", selected: '' },
+    { src: "assets/img/2a_etapa2023.jpg", selected: '' },
+    { src: "assets/img/4a_etapa2023.jpg", selected: '' },
+    { src: "assets/img/foto_atleta.jpg", selected: '' }
+  ];
 
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.transform);
-    setInterval(() => this.carrousel(), 3200);
+   this.start();
   }
 
+  nextImage(): void {
+    this.images[this.currentImgIndex].selected = '';
+    this.currentImgIndex = (this.currentImgIndex + 1) % this.images.length;
+    this.images[this.currentImgIndex].selected = 'selected';
+  }
 
-carrousel(): void {
-    this.idX++;
-
-    if(this.idX > 4) {
-        this.idX = 0;
-    }
-
-    this.transform = `translateX(${this.idX * -50}vw)`;
-}
-
-
-
+  start(): void {
+    setInterval(() => {
+      this.nextImage();
+    }, this.time);
+  }
 
 }
