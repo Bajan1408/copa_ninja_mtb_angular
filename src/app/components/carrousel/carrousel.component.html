@@ -1,23 +1,8 @@
+
 <div class="main">
-   <div class="carrousel">
-     <div [ngStyle]="{
-       'display': display,
-       'justify-content': justify,
-       'transition': transition,
-       'transform': transform
-     }">
-         <img class="photo-carrousel" src="../../../assets/img/1a_etapa2023.jpg" alt="foto atleta">
-         <img class="photo-carrousel" src="../../../assets/img/2a_etapa2023.jpg" alt="foto atleta">
-         <img class="photo-carrousel" src="../../../assets/img/foto_atleta.jpg" alt="foto atleta">
-         <img class="photo-carrousel" src="../../../assets/img/foto_atleta.jpg" alt="foto atleta">
-         <img class="photo-carrousel" src="../../../assets/img/4a_etapa2023.jpg" alt="foto atleta">
-         <img class="photo-carrousel" src="../../../assets/img/foto_atleta.jpg" alt="foto atleta">
-     </div>
-   </div>
-
- </div>
- <div class="division"></div>
-
-
+  <div id="slider">
+    <img *ngFor="let currentImage of images" src= "{{ currentImage.src }}" [ngClass]="currentImage.selected">
+  </div>
+</div>
 
 

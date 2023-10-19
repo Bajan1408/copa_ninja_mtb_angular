@@ -1,3 +1,9 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .main {
   background-color: #b33620;
   display: flex;
@@ -8,36 +14,35 @@
   top: 22.5vh;
 
   width: 90.2vw;
-  height: 49vh;
+  height: 80vh;
   margin-left: 2.6rem;
   margin-bottom: 7vh;
 }
 
-.carrousel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 22vh;
-  box-shadow: 2px 2px 4px black;
-  overflow: hidden;
-
-  width: 40vw;
-  max-height: 43vh;
-
-  border-radius: 10px;
-  border: 2px solid red;
+#slider {
+  width: 80%;
+  max-width: 75%;
+  height: 67vw;
+  max-height: 67vh;
+  position: relative;
 }
 
-.photo-carrousel {
+#slider img {
+  opacity: 0;
+  position: absolute;
+  border-radius: 5px;
+
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  border: 2px solid yellow
+
+  object-fit: cover;
+
+  transition: opacity 2000ms;
 }
 
-.division {
-  background-color: #FFF;
-  width: 90vw;
-  height: 3rem;
+#slider img.selected {
+  opacity: 1;
 }
+
+
 
