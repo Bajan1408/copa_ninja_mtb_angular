@@ -25,7 +25,11 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
+<<<<<<< HEAD
       dir: require('path').join(__dirname, './coverage/copa-ninja-mtb-new'),
+=======
+      dir: require('path').join(__dirname, './coverage/copa-ninja-mtb'),
+>>>>>>> b371a607623718c76e2887076f43cf1f362a1a24
       subdir: '.',
       reporters: [
         { type: 'html' },

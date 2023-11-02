@@ -1,6 +1,13 @@
 header {
+<<<<<<< HEAD
  position: fixed;
  z-index: 1;
+=======
+ /* margin-top: 0.25rem; */
+ position: fixed;
+ z-index: 1;
+ /*top: 0.25rem;  */
+>>>>>>> b371a607623718c76e2887076f43cf1f362a1a24
  left: 2.67rem;
 }
 
@@ -60,5 +67,9 @@ header {
 .division {
   background-color: #FFF;
   width: 90vw;
+<<<<<<< HEAD
   height: .15rem;
+=======
+  height: .35rem;
+>>>>>>> b371a607623718c76e2887076f43cf1f362a1a24
 }

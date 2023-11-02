@@ -9,7 +9,10 @@ import { CardOneComponent } from './components/card-one/card-one.component';
 import { PhotosComponent } from './components/photos/photos.component';
 import { CardTwoComponent } from './components/card-two/card-two.component';
 import { CarrouselComponent } from './components/carrousel/carrousel.component';
+<<<<<<< HEAD
 import { PageFourComponent } from './components/page-four/page-four.component';
+=======
+>>>>>>> b371a607623718c76e2887076f43cf1f362a1a24
 
 @NgModule({
   declarations: [
@@ -19,8 +22,12 @@ import { PageFourComponent } from './components/page-four/page-four.component';
     CardOneComponent,
     PhotosComponent,
     CardTwoComponent,
+<<<<<<< HEAD
     CarrouselComponent,
     PageFourComponent
+=======
+    CarrouselComponent
+>>>>>>> b371a607623718c76e2887076f43cf1f362a1a24
   ],
   imports: [
     BrowserModule,

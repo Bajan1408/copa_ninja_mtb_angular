@@ -42,4 +42,8 @@ export class CarrouselComponent implements OnInit {
     }, this.time);
   }
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b371a607623718c76e2887076f43cf1f362a1a24
