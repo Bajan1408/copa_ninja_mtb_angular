@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "name": "copa-ninja-mtb-new",
-=======
-  "name": "copa-ninja-mtb",
->>>>>>> b371a607623718c76e2887076f43cf1f362a1a24
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

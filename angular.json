@@ -3,11 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-<<<<<<< HEAD
     "copaNinjaMtbNew": {
-=======
-    "copaNinjaMtb": {
->>>>>>> b371a607623718c76e2887076f43cf1f362a1a24
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -17,11 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-<<<<<<< HEAD
             "outputPath": "dist/copa-ninja-mtb-new",
-=======
-            "outputPath": "dist/copa-ninja-mtb",
->>>>>>> b371a607623718c76e2887076f43cf1f362a1a24
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -72,17 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-<<<<<<< HEAD
               "browserTarget": "copaNinjaMtbNew:build:production"
             },
             "development": {
               "browserTarget": "copaNinjaMtbNew:build:development"
-=======
-              "browserTarget": "copaNinjaMtb:build:production"
-            },
-            "development": {
-              "browserTarget": "copaNinjaMtb:build:development"
->>>>>>> b371a607623718c76e2887076f43cf1f362a1a24
             }
           },
           "defaultConfiguration": "development"
@@ -90,11 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-<<<<<<< HEAD
             "browserTarget": "copaNinjaMtbNew:build"
-=======
-            "browserTarget": "copaNinjaMtb:build"
->>>>>>> b371a607623718c76e2887076f43cf1f362a1a24
           }
         },
         "test": {

@@ -7,15 +7,11 @@ body {
 .main {
   background-color: #b33620;
   display: flex;
-<<<<<<< HEAD
   flex-direction: column;
-=======
->>>>>>> b371a607623718c76e2887076f43cf1f362a1a24
   justify-content: center;
   align-items: center;
 
   position: relative;
-<<<<<<< HEAD
   top: 17.8vh;
 
   width: 89.9vw;
@@ -38,21 +34,6 @@ body {
   max-width: 65%;
   height: 57vw;
   max-height: 57vh;
-=======
-  top: 22.5vh;
-
-  width: 90.2vw;
-  height: 80vh;
-  margin-left: 2.6rem;
-  margin-bottom: 7vh;
-}
-
-#slider {
-  width: 80%;
-  max-width: 75%;
-  height: 67vw;
-  max-height: 67vh;
->>>>>>> b371a607623718c76e2887076f43cf1f362a1a24
   position: relative;
 }
 
@@ -72,9 +53,3 @@ body {
 #slider img.selected {
   opacity: 1;
 }
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> b371a607623718c76e2887076f43cf1f362a1a24

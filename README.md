@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # CopaNinjaMtbNew
-=======
-# CopaNinjaMtb
->>>>>>> b371a607623718c76e2887076f43cf1f362a1a24
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
 
